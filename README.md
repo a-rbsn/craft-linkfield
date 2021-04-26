@@ -224,17 +224,6 @@ possibilities will be picked:
 ```
 
 
-#### getType()
-
-Returns a string that indicates the type of the link. The plugin ships with the
-following link types: `asset`, `category`, `custom`, `email`, `entry`, `site`,
-`tel`, `url` and `user`.
-
-```twig
-{{ entry.myLinkField.getType() }}
-```
-
-
 #### getUrl($options = null)
 
 Returns the url of the link.
@@ -313,6 +302,16 @@ The link target as text. Can be either `_blank` or an empty string.
 
 ```twig
 <a target="{{ entry.myLinkField.target }}">...</a>
+```
+
+#### type
+
+Returns a string that indicates the type of the link. The plugin ships with the
+following link types: `asset`, `category`, `custom`, `email`, `entry`, `site`,
+`tel`, `url` and `user`.
+
+```twig
+{{ entry.myLinkField.type }}
 ```
 
 
